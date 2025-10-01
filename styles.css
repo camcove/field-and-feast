@@ -85,35 +85,83 @@ body {
 	margin: 0 auto;
 }
 
+/*HEADER & LOGO STYLING*/
 .webpage-header {
 	background: var(--midnight-blue);
 	color: white;
 	text-align: center;
 }
 
-.mainheader{
+.mainheader {
 	padding: 2.25rem 1rem 1rem;
 }
 
-.brandLogo{
+.brandLogo {
 	margin-inline: auto;
 	width: 170px;
 	height: auto;
 }
 
-.brandTitle{
-	font-size: clamp(2.2rem, 6vw, 4.5rem); /*using clamp function for responsive text sizing*/
+.brandTitle {
+	font-size: clamp(2.2rem, 6vw, 4.5rem); /*using clamp functions for responsive text sizing*/
 	font-weight: 800;
 	letter-spacing: .5px;
 	margin-top: .5rem;
 }
 
-.tagline{
-	font-size: clamp(1.05rem, 2.5vw, 1.35rem); /*using clamp function for responsive text sizing*/
+.tagline {
+	font-size: clamp(1.05rem, 2.5vw, 1.35rem);
   	opacity: .95;
   	margin-top: .25rem;
   	margin-bottom: 1rem;
 }
+
+/*NAV STYLING*/
+.nav-menu {
+  background: var(--champagne-gold);
+}
+
+.nav-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .5rem;
+  padding: .75rem 1rem;
+  margin: 0 auto;
+  width: min(92vw, var(--container));
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-weight: 800;
+  text-align: center;
+  display: block;
+  padding: .4rem .5rem;
+  color: #1f2a44;
+}
+
+/*GlOBAL STYLING FOR ALL SECTIONS*/
+.section {
+  padding: 2.25rem 1rem 1.75rem;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+  color: var(--midnight-blue);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/*GLOBAL STYLING FOR ALL DIVIDER LINES*/
+.divider-line {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, var(--champagne-gold) 0%, var(--champagne-gold) 100%);
+  width: 100%;
+  margin: 1.75rem 0 0;
+  opacity: .9;
+}
+
 
 /* MEDIA QUERY (medium) */
 
