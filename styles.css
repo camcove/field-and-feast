@@ -78,10 +78,11 @@ body {
 	color: var(--dark-charcoal);
 	background: var(--soft-white);
 	line-height: 1.6;
+	font-size: 1.25rem;
 }
 
 .container { /*main container of website*/
-	width: min(92vw, var(--container));
+	width: min(92vw, var(--container)); /*sets the container to never be wider than 92% of the viewport but it will also never exceed 1100px (per my function)*/
 	margin: 0 auto;
 }
 
@@ -152,6 +153,10 @@ body {
 	margin-bottom: 1rem;
 }
 
+#about p, #gallery p {
+	font-weight: 500;
+}
+
 /*GLOBAL STYLING FOR ALL DIVIDER LINES*/
 .divider-line {
 	border: none;
@@ -167,6 +172,10 @@ body {
 	display: grid;
 	gap: 1rem;
 	margin-top: .5rem;
+}
+
+.cards p, .cards ul {
+	font-size: 1.25rem;
 }
 
 .card {
@@ -185,6 +194,8 @@ body {
 .card-list {
 	margin-top: .5rem;
 	margin-bottom: .25rem;
+	list-style: disc;
+	padding-left: 1.2rem;
 }
 
 /*GALLERY & IMAGE STYLING*/
@@ -209,13 +220,48 @@ body {
 
 .gallery-card figcaption {
 	padding: .8rem 1rem;
-	font-size: 1.05rem;
+	font-size: 1.5rem;
+	font-family: var(--font);
+	font-weight: 600;
+	font-style: italic;
 	color: #333;
 	background: #fff;
 	text-align: center;
 }
 
 /*FOOTER & BUTTON STYLING*/
+.button {
+	display: block;
+	width: 100%;
+	text-align: center;
+	background: var(--olive-green);
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: 800;
+	padding: 1.5rem 0;
+	margin-top: 1.5rem;
+	border-radius: 10px;
+	box-shadow: var(--shadow);
+}
+
+.webpage-footer {
+	background: var(--midnight-blue);
+	color: white;
+	text-align: center;
+	padding: 2.25rem 1rem 3rem;
+}
+
+.webpage-footer a { 
+	color: var(--champagne-gold);
+	font-weight: 700;
+	text-decoration: none; 
+}
+
+.webpage-footer .social { 
+	margin-top: 1.2rem; 
+}
+
 /* MEDIA QUERY (medium) */
 
 
