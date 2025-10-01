@@ -292,28 +292,44 @@ body {
 
 /* MEDIA QUERY (large) */
 @media screen and (min-width: 900px) {
-  .brandLogo {
+	.brandLogo {
 		width: 200px;
 	}
 
-  .section {
+	.section {
 		padding: 2.75rem 0 2.25rem;
 	}
 
-  .cards {
+	.cards {
 		grid-template-columns: 1fr 1fr;
 	}
-  .card--wide {
+	.card--wide {
 		grid-column: 1 / -1;
 	}
 
-  .gallery {
+	.gallery {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
-  .gallery-card figcaption {
+	.gallery-card figcaption {
 		font-size: 1.15rem;
 	}
 }
 
 /* MEDIA QUERY (xl) */
+@media screen and (min-width: 1200px) {
+	.container {
+		width: min(86vw, var(--container));
+}
+
+	.gallery {
+		grid-template-columns: repeat(5, 1fr);
+}
+
+	.gallery-card img {
+		aspect-ratio: 1 / 1;
+}
+
+	.gallery-card figcaption {
+		font-size: 1rem;
+}
