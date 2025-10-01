@@ -263,7 +263,32 @@ body {
 }
 
 /* MEDIA QUERY (medium) */
+@media screen and (min-width: 600px) {
 
+	.mainheader { 
+		padding: 3rem 1rem 1.25rem;
+	}
+
+	.brandLogo { 
+		width: 190px;
+	}
+
+	.cards {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.card--wide {
+		grid-column: 1 / -1;
+	}
+
+	.gallery {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.gallery-card figcaption { 
+		font-size: 1.25rem;
+	}
+}
 
 /* MEDIA QUERY (large) */
 
