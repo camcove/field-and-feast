@@ -103,7 +103,7 @@ body {
 }
 
 .brandTitle {
-	font-size: clamp(2.2rem, 6vw, 4.5rem); /*using clamp functions for responsive text sizing*/
+	font-size: clamp(2.2rem, 6vw, 4.5rem); /*challenging myself to use clamp functions for responsive text sizing*/
 	font-weight: 800;
 	letter-spacing: .5px;
 	margin-top: .5rem;
@@ -118,51 +118,104 @@ body {
 
 /*NAV STYLING*/
 .nav-menu {
-  background: var(--champagne-gold);
+  	background-color: var(--champagne-gold);
 }
 
 .nav-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: .5rem;
-  padding: .75rem 1rem;
-  margin: 0 auto;
-  width: min(92vw, var(--container));
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: .5rem;
+	padding: .75rem 1rem;
+	margin: 0 auto;
+	width: min(92vw, var(--container)); /*sets the nav-list to never be wider than 92% of the viewport but it will also never exceed 1100px (per my function)*/
 }
 
 .nav-list a {
-  text-decoration: none;
-  font-weight: 800;
-  text-align: center;
-  display: block;
-  padding: .4rem .5rem;
-  color: #1f2a44;
+	text-decoration: none;
+	font-weight: 800;
+	text-align: center;
+	display: block;
+	padding: .4rem .5rem;
+	color: #1f2a44;
 }
 
 /*GlOBAL STYLING FOR ALL SECTIONS*/
 .section {
-  padding: 2.25rem 1rem 1.75rem;
+  	padding: 2.25rem 1rem 1.75rem;
 }
 
 .section-title {
-  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
-  color: var(--midnight-blue);
-  line-height: 1.2;
-  margin-bottom: 1rem;
+	font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+	color: var(--midnight-blue);
+	line-height: 1.2;
+	margin-bottom: 1rem;
 }
 
 /*GLOBAL STYLING FOR ALL DIVIDER LINES*/
 .divider-line {
-  border: none;
-  height: 2px;
-  background: linear-gradient(to right, var(--champagne-gold) 0%, var(--champagne-gold) 100%);
-  width: 100%;
-  margin: 1.75rem 0 0;
-  opacity: .9;
+	border: none;
+	height: 2px;
+	background-color: var(--champagne-gold);
+	width: 100%;
+	margin: 1.75rem 0 0;
+	opacity: .9;
 }
 
+/*OFFERING SECTION - "CARD" CONTAINER STYLING*/
+.cards {
+	display: grid;
+	gap: 1rem;
+	margin-top: .5rem;
+}
 
+.card {
+	background: var(--olive-green);
+	color: #fff;
+	border-radius: var(--radius);
+	padding: 1.1rem 1.15rem;
+	box-shadow: var(--shadow);
+}
+
+.card-title {
+	font-size: clamp(1.35rem, 4vw, 1.85rem);
+	line-height: 1.15;
+}
+
+.card-list {
+	margin-top: .5rem;
+	margin-bottom: .25rem;
+}
+
+/*GALLERY & IMAGE STYLING*/
+.gallery {
+	margin-top: 1rem;
+	display: grid;
+	gap: 1rem;
+}
+
+.gallery-card {
+	background: white;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: var(--shadow);
+}
+
+.gallery-card img {
+	aspect-ratio: 4/3; /*set aspect ratio to maintain image proportions*/
+	object-fit: cover; /*ensures image covers the entire area of the img element, cropping if necessary instead of stretching image*/
+	width: 100%;
+}
+
+.gallery-card figcaption {
+	padding: .8rem 1rem;
+	font-size: 1.05rem;
+	color: #333;
+	background: #fff;
+	text-align: center;
+}
+
+/*FOOTER & BUTTON STYLING*/
 /* MEDIA QUERY (medium) */
 
 
