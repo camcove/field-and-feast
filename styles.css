@@ -142,17 +142,21 @@ body {
 }
 
 /*GlOBAL STYLING FOR ALL SECTIONS*/
+
 .section {
-  	padding: 2.25rem 1rem 1.75rem;
+	padding-top: 1rem;
 }
 
 .section-title {
 	font-size: clamp(1.8rem, 4.5vw, 2.6rem);
 	color: var(--midnight-blue);
 	line-height: 1.2;
-	margin-bottom: 1rem;
+	margin-top: 0;
+  	margin-bottom: 1rem;
 }
-
+#about {
+	padding-top: 5rem;
+}
 #about p, #gallery p {
 	font-weight: 500;
 }
@@ -163,7 +167,8 @@ body {
 	height: 2px;
 	background-color: var(--champagne-gold);
 	width: 100%;
-	margin: 1.75rem 0 0;
+	margin: 2rem 0;
+	height: 2px;
 	opacity: .9;
 }
 
@@ -294,10 +299,6 @@ body {
 @media screen and (min-width: 900px) {
 	.brandLogo {
 		width: 200px;
-	}
-
-	.section {
-		padding: 2.75rem 0 2.25rem;
 	}
 
 	.cards {
